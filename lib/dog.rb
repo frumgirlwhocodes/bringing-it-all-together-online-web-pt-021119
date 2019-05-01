@@ -80,7 +80,7 @@ def self.find_or_create_by(name:, breed:)
   dog=DB[:conn].execute(sql,name, breed)
   if !dog.empty?
     dog_data=dog[0]
-    
+    dog2=Dog.new()
   
     
 end 
